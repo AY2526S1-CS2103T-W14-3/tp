@@ -7,7 +7,7 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
+        "keith-shen": "Keith Shen",
         "jane-doe": "Jane Doe",
         "zheng-chenyi-joan": "Zheng Chenyi Joan",
         "jean-doe": "Jean Doe",
@@ -132,6 +132,14 @@
       "title": "",
       "headings": {
         "addressbook-level-3": "AddressBook Level-3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/blurfrost.md",
+      "title": "Keith's Project Portfolio Page",
+      "headings": {
+        "keith-s-portfolio": "Keith's Portfolio"
       },
       "headingKeywords": {}
     },
