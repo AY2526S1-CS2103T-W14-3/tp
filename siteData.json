@@ -8,7 +8,7 @@
         "about-us": "About Us",
         "project-team": "Project team",
         "keith-shen": "Keith Shen",
-        "jane-doe": "Jane Doe",
+        "shawn-wee": "Shawn Wee",
         "zheng-chenyi-joan": "Zheng Chenyi Joan",
         "jean-doe": "Jean Doe",
         "she-jingling": "She Jingling"
@@ -156,6 +156,11 @@
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/mcfishhh.md",
+      "headings": {},
       "headingKeywords": {}
     },
     {
