@@ -15,7 +15,7 @@ Class UserPrefs
 Class UniquePersonList
 Class Person
 Class Email
-Class PersonName
+Class Name
 Class Phone
 Class Tag
 Class FeedingSession
@@ -37,7 +37,7 @@ UserPrefs .up.|> ReadOnlyUserPrefs
 
 AddressBook *--> "1" UniquePersonList
 UniquePersonList --> "~* all" Person
-Person *--> PersonName
+Person *--> Name
 Person *--> Phone
 Person *--> Email
 Person *--> "*" Tag
@@ -46,7 +46,7 @@ Person *--> "*" FeedingSession
 Person -[hidden]up--> I
 UniquePersonList -[hidden]right-> I
 
-PersonName -[hidden]right-> Phone
+Name -[hidden]right-> Phone
 Phone -[hidden]right-> Email
 
 ModelManager --> "~* filtered" Person
