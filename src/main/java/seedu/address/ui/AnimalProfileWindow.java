@@ -42,7 +42,10 @@ public class AnimalProfileWindow extends UiPart<Stage> {
         description.setText(animal.getDescription().value);
         locationLabel.setText(animal.getLocation().value);
 
-        openWindows.add(getRoot());
+        Stage stage = getRoot();
+        openWindows.add(stage);
+
+        stage.setOnCloseRequest(event -> openWindows.remove(stage));
     }
 
     /**
@@ -65,11 +68,14 @@ public class AnimalProfileWindow extends UiPart<Stage> {
      * Hides all open AnimalProfileWindows.
      */
     public static void hideAllProfiles() {
-        for (Stage window : openWindows) {
-            if (window.isShowing()) {
-                window.hide();
+        // copy to avoid concurrent modification
+        List<Stage> windowsToClose = new ArrayList<>(openWindows);
+        for (Stage window : windowsToClose) {
+            if (window != null && window.isShowing()) {
+                window.close();
             }
         }
+        openWindows.clear();
     }
 
     /**

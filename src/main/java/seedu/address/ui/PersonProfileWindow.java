@@ -70,7 +70,11 @@ public class PersonProfileWindow extends UiPart<Stage> {
 
         displayEarliestFeedingSession();
 
-        openWindows.add(getRoot());
+        Stage stage = getRoot();
+        openWindows.add(stage);
+
+        // Remove from tracking list when window is closed
+        stage.setOnCloseRequest(event -> openWindows.remove(stage));
     }
 
     /**
@@ -136,11 +140,14 @@ public class PersonProfileWindow extends UiPart<Stage> {
      * Hides all open PersonProfileWindows.
      */
     public static void hideAllProfiles() {
-        for (Stage window : openWindows) {
-            if (window.isShowing()) {
-                window.hide();
+        // avoid concurrent modification
+        List<Stage> windowsToClose = new ArrayList<>(openWindows);
+        for (Stage window : windowsToClose) {
+            if (window != null && window.isShowing()) {
+                window.close();
             }
         }
+        openWindows.clear();
     }
 
     /**
