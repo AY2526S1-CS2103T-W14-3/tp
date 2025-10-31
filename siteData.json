@@ -59,7 +59,12 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
+        "adding-a-person-or-animal": "Adding a person or animal",
+        "adding-a-feeding-session": "Adding a feeding session",
+        "editing-a-person-or-animal": "Editing a person or animal",
+        "finding-a-person-or-animal": "Finding a person or animal",
+        "deleting-a-person-or-animal": "Deleting a person or animal",
+        "deleting-a-feeding-session": "Deleting a feeding session",
         "saving-data": "Saving data"
       },
       "headingKeywords": {}
