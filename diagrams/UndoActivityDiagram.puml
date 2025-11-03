@@ -6,10 +6,10 @@ skinparam ArrowFontSize 12
 start
 :User executes 'undo' command;
 
-if () then ([undo stack empty])
+if (undoStack empty?) then ([yes])
   :Throw CommandException\n"No more commands to undo!";
   stop
-else ([else])
+else ([no])
   :Push current state to redoStack;
   :Pop previous state from undoStack;
   :Restore address book\nto previous state;
