@@ -97,7 +97,7 @@ The file is usually in the `Downloads` folder after downloading it.
 <div style="page-break-after: always;"></div>
 
    A interface similar to the below should appear in a few seconds. Note how the application contains some sample data.<br>
-   ![Ui](images/ui.png){style="width:90 0px; height:auto;"}<br>
+   ![Ui](images/ugUi.png){style="width:90 0px; height:auto;"}<br>
    For more details on the interface, you can refer to the [Overview of Interface](#overview-of-interface) section.
 
 6. Type the command in the command box (displaying *"Enter command here..."*) and press Enter to execute it.
